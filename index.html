@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Voyages – Explorer le monde</title>
+
+    <!-- Police Google Fonts : Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Si tu utilises un framework CSS (Bootstrap, Tailwind…), ajoute son lien ICI, AVANT style.css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- defer : le script s'exécute une fois le HTML chargé -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>Atlas Voyages</p>
+    </header>
+    <main>
+      <div class="heroSection">
+        <h1>Explorer le monde</h1>
+        <p>Choisis un continent, parcours les pays et trouve ta prochaine destination.</p>
+      </div>
+      <div class="filterSection">
+        <div>
+          <label for="continent">Continent</label>
+          <select name="continent" id="continent">
+            <option value="afrique">afrique</option>
+            <option value="europe">europe</option>
+          </select>
+        </div>
+        <div>
+          <label for="search">Rechercher un pays</label>
+          <input type="search" id="search" placeholder="EX : Morocco">
+        </div>
+        <button type="button" >Trier par population</button>
+      </div>
+      <div>
+        <article>
+          <div class="imagContainer"><img src=""></div>
+          <div class="articleContent">
+            <h3>Morocco</h3>
+            <div>
+              <span class="contentKey">capitale</span>
+              <span class="contentValue">Rabat</span>
+            </div>
+            <div>
+              <span class="contentKey">population</span>
+              <span class="contenValue">37 457 971</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <span>© 2026 Atlas Voyages · Données : countries.dev</span>
+    </footer>
+  </body>
+</html>

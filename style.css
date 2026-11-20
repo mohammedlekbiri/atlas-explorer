@@ -1,0 +1,63 @@
+:root {
+  --color-primary: #0f4c81; /* en-tête, bouton, focus */
+  --color-bg: #f5f7fa; /* fond de la page */
+  --color-surface: #ffffff; /* cartes, formulaire, champs */
+  --color-text: #1a2433; /* texte principal */
+  --color-muted: #5b6576; /* texte secondaire */
+  --color-border: #d9e0e8; /* bordures */
+  --color-error-bg: #fdecec; /* fond du message d'erreur (bonus) */
+  --color-error-text: #b42318; /* texte du message d'erreur (bonus) */
+
+  /* Police de la maquette : Inter (Google Fonts), ou une police système */
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+*{
+  margin: 0;
+  
+
+}
+ header{
+  padding: 1.5rem 4rem;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  font-weight: 600;
+  font-size: larger;
+}
+main{
+  padding: 2rem 4rem;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heroSection{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.filterSection{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  border: solid 2px gray;
+  border-radius: 14px;
+}
+.filterSection div{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+}
+.filterSection div:first-child{
+  select{
+    padding: .5rem;
+    font-size: ;
+  }
+}
+footer{
+  padding: 2rem 4rem;
+} 
